@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio profesional Software Engineer - Menampilkan project, skill, dan pengalaman dalam pengembangan software modern.">
+    <meta name="keywords" content="Software Engineer, Portfolio, Web Developer, Full Stack Developer">
+    <meta name="author" content="Hansel Varian">
+    <meta property="og:title" content="Hansel Varian | Software Engineer">
+    <meta property="og:description" content="Portfolio profesional Software Engineer - Full Stack Developer">
+    <meta property="og:type" content="website">
+    <title>Hansel Varian | Software Engineer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Devicon for tech logos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#techstack" class="nav-link">Tech Stack</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <i data-lucide="moon" class="theme-icon moon-icon"></i>
+                    <i data-lucide="sun" class="theme-icon sun-icon"></i>
+                </button>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-effects">
+            <div class="hero-gradient-orb orb-1"></div>
+            <div class="hero-gradient-orb orb-2"></div>
+            <div class="hero-grid-overlay"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Available for work
+                </div>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Hansel Varian</span>
+                </h1>
+                <h2 class="hero-subtitle">Software Engineer | Full Stack Developer</h2>
+                <p class="hero-description">
+                    Passionate about building scalable, performant, and user-friendly applications.
+                    I specialize in full-stack development with modern technologies and best practices.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i data-lucide="folder-open"></i>
+                        View Projects
+                    </a>
+                    <a href="assets/CV_Hansel_Varian.pdf" download class="btn btn-outline">
+                        <i data-lucide="download"></i>
+                        Download CV
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="3">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="20">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="10">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Technologies</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-card">
+                    <div class="profile-card-glow"></div>
+                    <div class="profile-img-wrapper">
+                        <img src="assets/anime.jpg" alt="Hansel Varian - Software Engineer" class="profile-img">
+                    </div>
+                    <div class="profile-card-info">
+                        <div class="status-badge">
+                            <span class="status-dot"></span>
+                            Open to work
+                        </div>
+                    </div>
+                    <div class="floating-badge badge-react">
+                        <i class="devicon-react-original"></i>
+                    </div>
+                    <div class="floating-badge badge-node">
+                        <i class="devicon-nodejs-plain"></i>
+                    </div>
+                    <div class="floating-badge badge-python">
+                        <i class="devicon-python-plain"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator">
+            <i data-lucide="chevrons-down"></i>
+        </a>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;about&gt;</span>
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                <p class="section-subtitle">Get to know me and what I do</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal-left">
+                    <h3>A passionate Software Engineer based in Indonesia 🇮🇩</h3>
+                    <p>
+                        I'm a Software Engineer with 3+ years of experience in building web applications
+                        and software solutions. I love turning complex problems into simple, elegant,
+                        and intuitive solutions.
+                    </p>
+                    <p>
+                        My journey in software development started during college, and since then
+                        I've worked on various projects ranging from e-commerce platforms to
+                        enterprise-level management systems. I'm constantly learning and staying
+                        up-to-date with the latest technologies and industry trends.
+                    </p>
+                    <p>
+                        When I'm not coding, you can find me exploring new technologies, contributing
+                        to open-source projects, or enjoying a good cup of coffee ☕
+                    </p>
+                </div>
+                <div class="skills-grid reveal-right">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i data-lucide="layout"></i>
+                        </div>
+                        <h4>Frontend</h4>
+                        <p>React, Vue.js, Next.js, TypeScript, Tailwind CSS, HTML/CSS</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i data-lucide="server"></i>
+                        </div>
+                        <h4>Backend</h4>
+                        <p>Node.js, Express, Python, Django, REST API, GraphQL</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i data-lucide="database"></i>
+                        </div>
+                        <h4>Database</h4>
+                        <p>PostgreSQL, MongoDB, MySQL, Redis, Prisma, Firebase</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i data-lucide="wrench"></i>
+                        </div>
+                        <h4>Tools / DevOps</h4>
+                        <p>Docker, Git, CI/CD, AWS, Nginx, Linux, GitHub Actions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TECH STACK SECTION ========== -->
+    <section class="section techstack" id="techstack">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;techstack&gt;</span>
+                <h2 class="section-title">Tech <span class="gradient-text">Stack</span></h2>
+                <p class="section-subtitle">Technologies I work with on a daily basis</p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-item reveal-up">
+                    <i class="devicon-javascript-plain colored"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="tech-item reveal-up">
+                    <i class="devicon-typescript-plain colored"></i>
+                    <span>TypeScript</span>
+                </div>
+                <div class="tech-item reveal-up">
+                    <i class="devicon-react-original colored"></i>
+                    <span>React</span>
+                </div>
+                <div class="tech-item reveal-up">
+                    <i class="devicon-nextjs-plain"></i>
+                    <span>Next.js</span>
+                </div>
+                <div class="tech-item reveal-up">
+                    <i class="devicon-vuejs-plain colored"></i>
+                    <span>Vue.js</span>
+                </div>
+                <div class="tech-item reveal-up">
+                    <i class="devicon-nodejs-plain colored"></i>
+                    <span>Node.js</span>
+                </div>
+                <div class="tech-item reveal-up">
+                    <i class="devicon-express-original"></i>
+                    <span>Express</span>
+                </div>
+                <div class="tech-item reveal-up">
+                    <i class="devicon-python-plain colored"></i>
+                    <span>Python</span>
+                </div>
+                <div class="tech-item reveal-up">
+                    <i class="devicon-django-plain colored"></i>
+                    <span>Django</span>
+                </div>
+                <div class="tech-item reveal-up">
+                    <i class="devicon-postgresql-plain colored"></i>
+                    <span>PostgreSQL</span>
+                </div>
+                <div class="tech-item reveal-up">
+                    <i class="devicon-mongodb-plain colored"></i>
+                    <span>MongoDB</span>
+                </div>
+                <div class="tech-item reveal-up">
+                    <i class="devicon-redis-plain colored"></i>
+                    <span>Redis</span>
+                </div>
+                <div class="tech-item reveal-up">
+                    <i class="devicon-docker-plain colored"></i>
+                    <span>Docker</span>
+                </div>
+                <div class="tech-item reveal-up">
+                    <i class="devicon-git-plain colored"></i>
+                    <span>Git</span>
+                </div>
+                <div class="tech-item reveal-up">
+                    <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
+                    <span>AWS</span>
+                </div>
+                <div class="tech-item reveal-up">
+                    <i class="devicon-tailwindcss-original colored"></i>
+                    <span>Tailwind</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROJECTS SECTION ========== -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;projects&gt;</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <p class="section-subtitle">Some of the projects I've built recently</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card reveal-up">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=340&fit=crop"
+                            alt="Analytics Dashboard" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com" target="_blank" class="project-link" aria-label="GitHub">
+                                <i data-lucide="github"></i>
+                            </a>
+                            <a href="#" target="_blank" class="project-link" aria-label="Live Demo">
+                                <i data-lucide="external-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Analytics Dashboard</h3>
+                        <p>Full-stack analytics dashboard with real-time data visualization, user authentication, and
+                            role-based access control.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>PostgreSQL</span>
+                            <span>Chart.js</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card reveal-up">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=340&fit=crop"
+                            alt="E-Commerce Platform" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com" target="_blank" class="project-link" aria-label="GitHub">
+                                <i data-lucide="github"></i>
+                            </a>
+                            <a href="#" target="_blank" class="project-link" aria-label="Live Demo">
+                                <i data-lucide="external-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Modern e-commerce platform with product management, shopping cart, payment integration, and
+                            order tracking system.</p>
+                        <div class="project-tech">
+                            <span>Next.js</span>
+                            <span>TypeScript</span>
+                            <span>Stripe</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card reveal-up">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=340&fit=crop"
+                            alt="Task Manager Pro" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com" target="_blank" class="project-link" aria-label="GitHub">
+                                <i data-lucide="github"></i>
+                            </a>
+                            <a href="#" target="_blank" class="project-link" aria-label="Live Demo">
+                                <i data-lucide="external-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Task Manager Pro</h3>
+                        <p>Collaborative task management app with Kanban boards, real-time updates, team collaboration,
+                            and progress analytics.</p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>Express</span>
+                            <span>Socket.io</span>
+                            <span>Redis</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="project-card reveal-up">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1611746872915-64382b5c76da?w=600&h=340&fit=crop"
+                            alt="ChatConnect" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com" target="_blank" class="project-link" aria-label="GitHub">
+                                <i data-lucide="github"></i>
+                            </a>
+                            <a href="#" target="_blank" class="project-link" aria-label="Live Demo">
+                                <i data-lucide="external-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>ChatConnect</h3>
+                        <p>Real-time messaging application with group chats, file sharing, end-to-end encryption, and
+                            video calling features.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>WebSocket</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 5 -->
+                <article class="project-card reveal-up">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=340&fit=crop"
+                            alt="WeatherScope" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com" target="_blank" class="project-link" aria-label="GitHub">
+                                <i data-lucide="github"></i>
+                            </a>
+                            <a href="#" target="_blank" class="project-link" aria-label="Live Demo">
+                                <i data-lucide="external-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>WeatherScope</h3>
+                        <p>Beautiful weather application with location-based forecasts, interactive maps, weather
+                            alerts, and historical data analysis.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>OpenWeather API</span>
+                            <span>Mapbox</span>
+                            <span>PWA</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 6 -->
+                <article class="project-card reveal-up">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=600&h=340&fit=crop"
+                            alt="DevBlog CMS" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com" target="_blank" class="project-link" aria-label="GitHub">
+                                <i data-lucide="github"></i>
+                            </a>
+                            <a href="#" target="_blank" class="project-link" aria-label="Live Demo">
+                                <i data-lucide="external-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>DevBlog CMS</h3>
+                        <p>Content management system for developers with markdown editor, syntax highlighting, SEO
+                            optimization, and analytics dashboard.</p>
+                        <div class="project-tech">
+                            <span>Next.js</span>
+                            <span>MDX</span>
+                            <span>Prisma</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== EXPERIENCE SECTION ========== -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;experience&gt;</span>
+                <h2 class="section-title">Experience & <span class="gradient-text">Education</span></h2>
+                <p class="section-subtitle">My professional journey and academic background</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal-left">
+                    <div class="timeline-marker">
+                        <i data-lucide="briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge">Work</div>
+                        <h3>Software Engineer</h3>
+                        <h4>PT Tech Innovation Indonesia</h4>
+                        <span class="timeline-date">
+                            <i data-lucide="calendar"></i>
+                            Jan 2024 – Present
+                        </span>
+                        <p>Developing and maintaining enterprise-level web applications using React, Node.js, and
+                            PostgreSQL. Leading a team of 4 developers and implementing CI/CD pipelines.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal-right">
+                    <div class="timeline-marker">
+                        <i data-lucide="briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge">Work</div>
+                        <h3>Junior Full-Stack Developer</h3>
+                        <h4>Startup Digital Nusantara</h4>
+                        <span class="timeline-date">
+                            <i data-lucide="calendar"></i>
+                            Jun 2022 – Dec 2023
+                        </span>
+                        <p>Built and deployed 10+ web applications for various clients. Worked with React, Vue.js,
+                            Express, and MongoDB. Improved application performance by 40%.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal-left">
+                    <div class="timeline-marker">
+                        <i data-lucide="briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge">Internship</div>
+                        <h3>Frontend Developer Intern</h3>
+                        <h4>PT Digital Solutions</h4>
+                        <span class="timeline-date">
+                            <i data-lucide="calendar"></i>
+                            Jan 2022 – May 2022
+                        </span>
+                        <p>Developed responsive user interfaces using React and Tailwind CSS. Collaborated with UX
+                            designers and backend team to deliver pixel-perfect implementations.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal-right">
+                    <div class="timeline-marker">
+                        <i data-lucide="graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge education">Education</div>
+                        <h3>Bachelor of Computer Science</h3>
+                        <h4>Universitas Indonesia</h4>
+                        <span class="timeline-date">
+                            <i data-lucide="calendar"></i>
+                            2018 – 2022
+                        </span>
+                        <p>Graduated with honors (GPA 3.8/4.0). Specialized in Software Engineering. Active in coding
+                            communities and participated in multiple hackathons.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;contact&gt;</span>
+                <h2 class="section-title">Get in <span class="gradient-text">Touch</span></h2>
+                <p class="section-subtitle">Let's discuss your next project or just say hello</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal-left">
+                    <h3>Let's work together</h3>
+                    <p>I'm always open to new opportunities and interesting projects. Whether you have a question or
+                        just want to say hi, feel free to reach out!</p>
+
+                    <div class="contact-links">
+                        <a href="mailto:hansel.varian@email.com" class="contact-link-item">
+                            <div class="contact-icon">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div>
+                                <span class="contact-link-label">Email</span>
+                                <span class="contact-link-value">hansel.varian@email.com</span>
+                            </div>
+                        </a>
+                        <a href="https://github.com/hanselvarian" target="_blank" class="contact-link-item">
+                            <div class="contact-icon">
+                                <i data-lucide="github"></i>
+                            </div>
+                            <div>
+                                <span class="contact-link-label">GitHub</span>
+                                <span class="contact-link-value">github.com/hanselvarian</span>
+                            </div>
+                        </a>
+                        <a href="https://linkedin.com/in/hanselvarian" target="_blank" class="contact-link-item">
+                            <div class="contact-icon">
+                                <i data-lucide="linkedin"></i>
+                            </div>
+                            <div>
+                                <span class="contact-link-label">LinkedIn</span>
+                                <span class="contact-link-value">linkedin.com/in/hanselvarian</span>
+                            </div>
+                        </a>
+                        <a href="https://twitter.com/hanselvarian" target="_blank" class="contact-link-item">
+                            <div class="contact-icon">
+                                <i data-lucide="twitter"></i>
+                            </div>
+                            <div>
+                                <span class="contact-link-label">Twitter</span>
+                                <span class="contact-link-value">@hanselvarian</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form reveal-right" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="What's this about?">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Your message..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i data-lucide="send"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#hero" class="nav-logo">
+                        <span class="logo-bracket">&lt;</span>HV<span class="logo-bracket"> /&gt;</span>
+                    </a>
+                    <p>Building digital experiences that matter.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/hanselvarian" target="_blank" aria-label="GitHub">
+                        <i data-lucide="github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/hanselvarian" target="_blank" aria-label="LinkedIn">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/hanselvarian" target="_blank" aria-label="Twitter">
+                        <i data-lucide="twitter"></i>
+                    </a>
+                    <a href="mailto:hansel.varian@email.com" aria-label="Email">
+                        <i data-lucide="mail"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Hansel Varian. All rights reserved.</p>
+                <p>Designed & Built with <span class="heart">❤</span> using HTML, CSS & JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
